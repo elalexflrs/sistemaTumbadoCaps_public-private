@@ -12,7 +12,7 @@ function Ventas() {
         <span>Precio</span>
         <span>Total</span>
       </div>
-      <SalesTable filterDates={filterDates} className='scroll'/>
+      <SalesTable className='scroll'/>
     </div>
   );
 }

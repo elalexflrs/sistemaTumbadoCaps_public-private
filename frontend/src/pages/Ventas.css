@@ -22,7 +22,7 @@
   border-bottom: 2px solid var(--border);
 
   position: sticky;
-  top: calc(var(--nav-h) + var(--filter-h));
+  top: calc(var(--nav-h));
   z-index: 900; /* por debajo del filtro, por encima del contenido */
 }
 
