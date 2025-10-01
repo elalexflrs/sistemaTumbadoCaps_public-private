@@ -1,15 +1,8 @@
 import React, { useState } from "react";
-import DateFilter from "../components/Ventas/DateFilter";
 import SalesTable from "../components/Ventas/SalesTable"; // ⬅️ Importamos el nuevo componente
 import "./Ventas.css";
 
 function Ventas() {
-  const [filterDates, setFilterDates] = useState({ startDate: "", endDate: "" });
-
-  const handleFilter = (dates) => {
-    setFilterDates(dates);
-  };
-
   return (
     <div className="ventas-page">
       <DateFilter onFilter={handleFilter} />
