@@ -1,0 +1,25 @@
+/* ====== TABLA (solo cuerpo; encabezado está en Ventas.css) ====== */
+.sales-table{
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  color: var(--text);
+  border-collapse: collapse;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.sales-body{
+  display: flex;
+  flex-direction: column;
+}
+
+/* Separadores entre ventas */
+.sales-divider{
+  border-bottom: 2px solid var(--border);
+  margin: 0 6px;
+}
+
+/* 🔴 Importante:
+   NO definir aquí .sales-header para evitar conflictos con Ventas.css */

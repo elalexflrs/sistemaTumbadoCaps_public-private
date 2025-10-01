@@ -1,0 +1,59 @@
+/* ====== TARJETA / FILAS DE VENTA ====== */
+.sale-card{
+  display: flex;
+  flex-direction: column;
+  color: var(--text);
+  font-size: 15px;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+
+.sale-divider{
+  border-top: 1px solid var(--border);
+  margin: 4px 0;
+}
+
+/* Fila de cabecera + detalle (misma grilla que encabezados) */
+.sale-detail-row{
+  display: grid;
+  grid-template-columns: 0.8fr 3fr 1fr 1fr 1fr; /* #venta | producto | cantidad | precio | total */
+  padding: 6px 8px;
+  align-items: center;
+  column-gap: 6px;
+}
+
+.sale-detail-row span{ padding: 0 4px; }
+
+.no-venta{
+  text-align: center;
+  font-weight: 700;
+}
+
+.producto{ text-align: left; }
+.cantidad,
+.precio,
+.total{ text-align: center; }
+
+/* Totales por venta */
+.sale-footer{
+  display: grid;
+  grid-template-columns: 1fr auto auto; /* fecha | total | ganancia */
+  align-items: center;
+  gap: 16px;
+  padding: 8px 12px;
+}
+
+.sale-footer .fecha{
+  margin: 0;
+  font-size: 14px;
+  opacity: .85;
+  text-align: left;
+}
+
+.sale-footer .totales{
+  justify-self: end;
+  font-weight: 700;
+}

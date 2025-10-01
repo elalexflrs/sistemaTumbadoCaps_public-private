@@ -1,0 +1,89 @@
+.apartados-table-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.loading,
+.no-data {
+  text-align: center;
+  color: #aaa;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.apartados-table-container {
+  overflow-x: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.apartados-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.apartados-table thead {
+  background-color: #c73434;
+  color: white;
+}
+
+.apartados-table th {
+  padding: 12px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.apartados-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #333;
+  font-size: 16px;
+}
+
+.apartados-table tr:hover {
+  background-color: #2a2a2a;
+  transition: background 0.2s ease-in-out;
+}
+
+
+.btn-acciones {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  padding: 4px 8px;
+}
+
+.acciones-menu {
+  position: fixed; /* en lugar de absolute */
+  top: auto;
+  left: auto;
+  background: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  min-width: 120px;
+  z-index: 999; /* asegurar que esté encima */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+
+
+.accion-item {
+  background: none;
+  border: none;
+  color: white;
+  text-align: left;
+  padding: 10px 12px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.accion-item:hover {
+  background: #444;
+}

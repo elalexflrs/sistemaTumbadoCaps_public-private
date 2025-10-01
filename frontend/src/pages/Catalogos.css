@@ -1,0 +1,210 @@
+/* Catalogos.css */
+.catalogos-page {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px 30px;
+  min-height: 100vh; /* ocupa todo el alto de la pantalla */
+  box-sizing: border-box;
+}
+
+.page-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  color: #fff;
+}
+
+/* Grid principal: Marcas - Modelos - Proveedores */
+.catalogos-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr; /* Marcas más chicas, Modelos más ancho */
+  gap: 25px;
+  flex: 1; /* fuerza a crecer con la altura disponible */
+  align-items: stretch; /* que todas las columnas lleguen abajo */
+}
+
+/* Secciones */
+.catalog-section {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  height: 97%; /* todas las cajas igual de altas */
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px; /* más espacio con el contenido */
+  gap: 15px; /* separa título, input y botón */
+  flex-wrap: wrap; /* si no cabe, que salte de línea */
+}
+
+.section-header h3 {
+  margin: 0;
+  color: #c73434;
+  flex-shrink: 0; /* que no se encoja el título */
+}
+
+.form-inline {
+  display: flex;
+  gap: 12px; /* más separación entre input y botón */
+  flex-wrap: wrap;
+}
+
+.form-inline input,
+.form-inline select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 14px;
+  background-color: #2b2b2b;
+  color: #fff;
+}
+
+.form-inline button {
+  background-color: #c73434;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.form-inline button:hover {
+  background-color: #9b2a2a;
+}
+
+/* Listado */
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex: 1; /* ocupa todo el espacio restante */
+  overflow-y: auto;
+  scrollbar-width: thin; /* para Firefox */
+  scrollbar-color: #444 #1e1e1e; /* para Firefox */
+}
+
+/* Scrollbar en Chrome / Edge */
+.list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.list::-webkit-scrollbar-track {
+  background: #1e1e1e;
+  border-radius: 8px;
+}
+
+.list::-webkit-scrollbar-thumb {
+  background-color: #444;
+  border-radius: 8px;
+}
+
+.list li {
+  padding: 10px 6px;
+  border-bottom: 1px solid #333;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list li:last-child {
+  border-bottom: none;
+}
+
+.list .marca {
+  color: #aaa;
+  font-size: 13px;
+}
+
+.form-inline.wide-form {
+  flex: 1;
+  display: flex;
+  gap: 10px;
+}
+
+.form-inline select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 14px;
+  background-color: #2b2b2b;
+  color: #fff;
+}
+
+/* Botón delete */
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  transition: transform 0.2s ease;
+  color: #aaa;
+}
+
+.delete-btn:hover {
+  transform: scale(1.2);
+  color: #c73434;
+}
+
+
+/* === Ajuste de sección de Modelos con filtro === */
+.catalog-all .section-header {
+  display: flex;
+  flex-direction: column; /* apila título/filtro arriba y form abajo */
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.catalog-all .header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.catalog-all .header-top h3 {
+  margin: 0;
+  color: #c73434;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.catalog-all .header-top select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 14px;
+  background-color: #2b2b2b;
+  color: #fff;
+  min-width: 180px;
+}
+
+/* Formulario debajo (nuevo modelo) */
+.catalog-all .form-inline {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.catalog-all .form-inline input,
+.catalog-all .form-inline select {
+  flex: 1;
+  min-width: 150px;
+}

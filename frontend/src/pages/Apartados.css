@@ -1,0 +1,21 @@
+.apartados-page {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 92px 30px;
+}
+
+.page-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+}
+
+.apartados-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-button { padding-right: 20px; }

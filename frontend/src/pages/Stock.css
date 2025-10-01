@@ -1,0 +1,14 @@
+/* Stock.css */
+.stock-page {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 20px 30px;
+}
+
+.page-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+}

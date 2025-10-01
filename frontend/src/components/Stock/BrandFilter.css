@@ -1,0 +1,55 @@
+/* BrandFilter.css */
+.brand-filter {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+  padding: 8px 20px;
+  color: white;
+  font-size: 14px;
+
+  position: sticky;
+  top: 70px;   /* altura de tu navbar */
+  z-index: 999; 
+  background-color: #121212;
+}
+
+.brand-filter label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.brand-filter select {
+  padding: 4px 6px;
+  border-radius: 5px;
+  border: none;
+  font-size: 13px;
+}
+
+.brand-filter button {
+  background-color: #c73434;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 13px;
+}
+
+.brand-filter button:hover {
+  background-color: #9b2a2a;
+}
+
+.brand-filter::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 5px;
+  right: 5px;
+  height: 2px;
+  background-color: white;
+  border-radius: 2px;
+}

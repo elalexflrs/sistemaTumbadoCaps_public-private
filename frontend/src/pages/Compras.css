@@ -1,0 +1,24 @@
+/* Compras.css */
+.compras-page {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 92px 30px; /* un poco más de padding arriba que stock */
+}
+
+.page-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* Contenedor para título y botón */
+.compras-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-button { padding-right: 20px; }
+
